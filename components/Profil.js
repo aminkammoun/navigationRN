@@ -1,13 +1,13 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Button, Text, View } from "react-native";
 
-export default function profil() {
+export default function profil({ navigation }) {
   return (
     <View>
       <Text>about Screen</Text>
       <Button
         title="Go to home Screen"
-        onPress={() => navigation.navigate("HomeScreen")}
+        onPress={() => navigation.navigate("AboutScreen")}
       />
     </View>
   );
